@@ -19,12 +19,12 @@ const Projects = () => {
             className="mb-8 flex flex-wrap lg:justify-center"
             initial={{
               opacity: 0,
-              x: index % 2 === 0 ? -100 : 100, // Alternating left-right
+              x: index % 2 === 0 ? -100 : 100,
             }}
-            whileInView={{ opacity: 1, x: 0 }} // Move to center when in view
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{
               duration: 1,
-              delay: index * 0.2, // Delay to stagger animations
+              delay: index * 0.2,
               ease: "easeInOut",
             }}
           >
@@ -34,17 +34,23 @@ const Projects = () => {
               transition={{ duration: 1, delay: 0.2 }}
               className="w-full lg:w-1/4"
             >
-              <img
-                src={project.image}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  maxWidth: "200px",
-                  maxHeight: "200px",
-                }}
-                alt={project.title}
-                className="mb-6 rounded"
-              />
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  src={project.image}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    maxWidth: "200px",
+                    maxHeight: "200px",
+                  }}
+                  alt={project.title}
+                  className="mb-6 rounded cursor-pointer"
+                />
+              </a>
             </motion.div>
             <motion.div
               initial={{ opacity: 0 }}

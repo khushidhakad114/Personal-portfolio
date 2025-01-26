@@ -33,6 +33,7 @@ export const PROJECTS = [
     description:
       "A fully functional Restaurant website with features like product listing restaurants with configue driven UI, add to cart dishes, and user authentication.",
     technologies: ["HTML", "CSS", "React", "Redux", "DaisyUi", "Firebase"],
+    liveLink: "https://github.com/khushidhakad114/React",
   },
   {
     title: "Weather Web-App",
@@ -40,6 +41,7 @@ export const PROJECTS = [
     description:
       "An application for checking live weather updates with features like location search, weather forecast.",
     technologies: ["HTML", "CSS", "Javascript"],
+    liveLink: "https://weather-six-beta-57.vercel.app/",
   },
 ];
 
