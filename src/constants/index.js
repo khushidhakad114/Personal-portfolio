@@ -32,7 +32,7 @@ export const PROJECTS = [
     image: project1,
     description:
       "A fully functional Restaurant website with features like product listing restaurants with configue driven UI, add to cart dishes, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Redux", "DaisyUi", "Firebase"],
+    technologies: ["React", "Tailwind", "Redux", "DaisyUi", "Firebase"],
     liveLink: "https://github.com/khushidhakad114/React",
   },
   {
